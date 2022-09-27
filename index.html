@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    
+    <!-- MATERIAL-ICON-CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- SCROLL-JS -->
+    <script src="./assets/js/scroll.js" defer></script>
+
+    <!-- CHART-JS -->
+    <script src="./assets/js/chart.js" defer></script>
+
+    <!-- JS -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- ICON-START --> 
+    <script src="https://kit.fontawesome.com/1b1d9cd629.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- =====================NAVBAR-STARTS===================== -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="#home"><h3 id="logo">7</h3></a>
+            <ul class="nav-menu">                
+                <li><a href="#statistics">Statistics</a></li>
+                <li><a href="#biography">Biography</a></li>
+                <li><a href="#records">Records</a></li>
+                <li><a href="#honours">Honours</a></li>
+                <li><a href="#gallery">Gallery</a></li> 
+            </ul>
+
+            <button id="open-menu-btn"><span class="material-icons-sharp">menu</span></button>
+            <button id="close-menu-btn"><span class="material-icons-sharp">close</span></button>
+        </div>
+    </nav>
+    <!-- =====================NAVBAR-ENDS===================== -->
+    <main class="main">
+        <!-- =====================HEADER-STARTS===================== -->
+        <header id="home" class="section">
+            <div class="container header-container">
+                <!-- HEADER-LEFT-1 -->
+                <div class="header-left-1">
+                    <h1>MAHENDRA SINGH DHONI</h1>
+                    <p>
+                        The Captain who conquered billion of hearts
+                    </p>
+                </div>
+                <!-- HEADER-LEFT-2 -->
+                <div class="header-left-2">
+
+                    <section class="personalities" id="personalities">
+                        <div class="wrap">
+                
+                            <div class="quotes" id="personalities-quotes">
+                                <div class="active">
+                                    <div class="img"><img src="./assets/images/kapil-dev.jpg" ></div>
+                                    <h5>Kapil Dev</h5>
+                                    <p>MS Dhoni is my hero. We talk a lot about Sachin Tendulkar, Virender Sehwag. But this boy has much talent then anyone else.</p>
+                                </div>        
+                
+                                <div class="inactive">                
+                                    <div class="img"><img src="./assets/images/Adam-Gilchrist.jpg" ></div>
+                                    <h5>Adam Gilchrist</h5>
+                                    <p>MS is not the next Gilchrist, he is the first MS Dhoni.</p>                
+                                </div>            
+                                
+                                <div class="inactive">                
+                                    <div class="img"><img src="./assets/images/gary-kirsten.jpg" ></div>
+                                    <h5>Gary Kirsten</h5>
+                                    <p>I would go to war with Dhoni by my side.</p>                
+                                </div>           
+                                
+                                <div class="inactive">                
+                                    <div class="img"><img src="./assets/images/sourav-ganguly.jpg" ></div>
+                                    <h5>Sourav Ganguly</h5>
+                                    <p> I wish I would have Dhoni in my 2003 World Cup team. I was told that when we were playing the 2003 World Cup final he was still a ticket collector with Indian Railways. Unbelievable!</p>
+                                </div>            
+                                
+                                <div class="inactive">                    
+                                    <div class="img"><img src="./assets/images/abd.jpg" ></div>
+                                    <h5>AB De Villiars</h5>
+                                    <p>I would play MS Dhoni in my team every day of every year. He can be 80, in a wheelchair, and he would still play for my team.</p>                    
+                                </div>            
+                                
+                                <div class="inactive">                    
+                                    <div class="img"><img src="./assets/images/kevin-peterson.jpg" ></div>
+                                    <h5>Kevin Peterson</h5>
+                                    <p>MS Dhoni is the cleverest captain I have ever seen</p>                    
+                                </div>
+                
+                                <div class="inactive">                    
+                                    <div class="img"><img src="./assets/images/rahul-dravid.jpg" ></div>
+                                    <h5>Rahul Dravid</h5>
+                                    <p>Dhoni is best captain, very uncomplicated, always led by example.</p>                    
+                                </div>
+                
+                                <div class="inactive">                    
+                                    <div class="img"><img src="./assets/images/sachin-tendulkar.jpg" ></div>
+                                    <h5>Sachin Tendulkar</h5>
+                                    <p>Dhoni is the best captain I have played under. He always tried to be a step ahead of the opposition.</p>                    
+                                </div>            
+                                
+                                <div class="inactive">                    
+                                    <div class="img"><img src="./assets/images/tom-moody.jpg" ></div>
+                                    <h5>Tom Moody</h5>
+                                    <p>India is lucky to have MS Dhoni as captain.</p>                    
+                                </div>                
+                            </div>
+                            <ul class="no-display dots" id="personalities-dots">
+                                <li class="dot active"></li>
+                                <li class="dot"></li>
+                                <li class="dot"></li>
+                                <li class="dot"></li>
+                                <li class="dot"></li>
+                                <li class="dot"></li>
+                                <li class="dot"></li>
+                                <li class="dot"></li>
+                                <li class="dot"></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <!-- HEADER-RIGHT -->
+                <div class="header-right">
+                    <div class="header-right-img">
+                        <img src="./assets/images/hero-img.webp" alt="image">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- =====================HEADER-ENDS===================== -->
+        <!-- ====================STASTICS-STARTS===================== -->
+        <section class="container statistics section" id="statistics">
+            <h1 class="section-heading">Statistics</h1>
+
+            <section class="charts-container">
+
+                    <!-- CHART-1 -->
+                    <div class="chart-container pie-chart" id="chart-div1">
+                        <canvas class="chart-canvas" id="captainship" aria-label="chart" role="image" width="200" height="200"></canvas>
+                        <h4>Captainship</h4>
+                    </div>
+                    <div class="chart-container pie-chart" id="chart-div2">
+                        <canvas class="chart-canvas" id="icc-tornaments" aria-label="chart" role="image" width="200" height="200"></canvas>
+                        <h4>ICC Tournament Captainship</h4>
+                    </div>
+                    <!-- CHART-3 -->
+                    <div class="chart-container pie-chart" id="chart-div3">
+                        <canvas class="chart-canvas" id="ipl-league" aria-label="chart" role="image" width="200" height="200"></canvas>
+                        <h4>IPL Captainship</h4>
+                    </div>
+
+                    <!-- CHART-4 -->
+                    <div class="chart-container line-chart" id="chart-div4">
+                        <canvas class="chart-canvas" id="boundaries" aria-label="chart" role="image" width="200" height="200"></canvas>
+                        <h4>Boundaries</h4>
+                    </div>
+                    <!-- CHART-5 -->
+                    <div class="chart-container line-chart" id="chart-div5">
+                        <canvas class="chart-canvas" id="avg-str" aria-label="chart" role="image" width="200" height="200"></canvas>
+                        <h4>Strike Rate & Average</h4>
+                    </div>
+                    <!-- CHART-6 -->
+                    <div class="chart-container line-chart" id="chart-div6">
+                        <canvas class="chart-canvas" id="50-100" aria-label="chart" role="image" width="200" height="200"></canvas>
+                        <h4>50's - 100's</h4>
+                    </div>     
+    
+                <!-- CHART-7 -->
+                    <div class="chart-container doughnut-chart" id="chart-div7">
+                        <canvas class="chart-canvas" id="run-scored" aria-label="chart" role="image" width="200" height="200"></canvas>
+                        <h4>Runs Scored</h4>
+                    </div>
+                    <!-- CHART-8 -->
+                    <div class="chart-container doughnut-chart" id="chart-div8">
+                        <canvas class="chart-canvas" id="wicket-keeper" aria-label="chart" role="image" width="200" height="200"></canvas>
+                        <h4>Wicket-Keeper</h4>
+                    </div>
+
+            </section>
+        </section>        
+        <!-- ======================STATISTICS-ENDS======================= -->
+        <!-- ======================BIOGRAPHY-STARTS======================= -->
+        <section class="container biography section" id="biography">
+            <h1 class="section-heading">Biography</h1>
+            <div class="biography-wrapper">
+                <!-- --------------------------EARLY-LIFE------------------------- -->
+                <article id="early-life" class="early-life-biography">
+                    <h3>Early Life</h3>
+
+                    <p id="early-life-para">
+                        Mahendra Singh Dhoni, popularly known as ‘MS Dhoni’  was born in a middle-class Rajput family on 7 July 1981 in Ranchi, Jharkhand (then in Bihar).
+                        <button class="close-biography-btn close-btn no-display"><span class="material-icons-sharp">close</span></button>
+                        <button class="btn btn-primary biography-detailed-btn">Read More</button>
+                        <span  id="early-life-details" class="no-display">    
+                            His father, Pan Singh, was an employee at MECON. His mother, Devki Devi, is a homemaker. 
+                            He completed his schooling at DAV Jawahar Vidya Mandir in Shyamali, Ranchi. <br><br>
+
+                            During his school days, he used to play badminton and football. He played as a goalkeeper in a local football team. 
+                            Watching his eye-catchy skills, his football coach sent him to a local cricket club to play cricket. 
+                            He never played cricket before but he managed to grab the concept perfectly.
+                            His wicket-keeping skills amazed everyone in the club. 
+                            He was appointed as the wicketkeeper for the local team on a regular basis. <br><br>
+
+                            Later, he started to focus primarily on cricket and left his glory days of football and badminton behind. 
+                            It was a drastic change in his life. He started to take professional coaching after Class X. 
+                            He was also a meritorious student and teachers respected him for his versatile nature. 
+                            He used to manage his studies and sports sessions perfectly. His family was very supportive of his ambitions.
+                        </span>
+                    </p>                
+                </article>
+                <!-- --------------------------EARLY-CAREER------------------------- -->
+                <article id="early-career" class="early-career-biography">
+                    <h3>Initial Hustle</h3>
+
+                    <p id="early-career-para">
+                        MS Dhoni was selected as the U-19 Bihar cricket squad member in 1998-99. 
+                        When he was 18 years old, he played the first match in Ranji Trophy for Bihar and scored a half-century. 
+                        <button class="close-biography-btn close-btn no-display"><span class="material-icons-sharp">close</span></button>
+                        <button class="btn btn-primary biography-detailed-btn">Read More</button>
+                        <span  id="early-career-details" class="no-display">
+                            Just after 5 years, his skills caught the eyes of team selectors of the Indian national cricket team. 
+                            His excellent performance and a century for the East Zone helped the team to clinch the Deodhar Trophy. <br><br>
+
+                            His 60 runs also helped his team to clinch the Duleep Trophy. <br><br>
+
+                            As time passed, he joined Indian Railways as a Train Ticket Examiner (TTE) in Midnapore District, West Bengal in 2000. 
+                            He was very honest. He also had a mischievous side. 
+                            He once dressed as ghosts with his friends and scared the night guards patrolling the railway quarters. 
+                            He eventually became better in his cricketing skills. 
+                            His performance in the Triangular Tournament held in Kenya against Pakistan. <br><br>
+
+                            This christened him with a new name ‘clinical destroyer’ of commendable bowling attacks. 
+                            PC Poddar, the Bengal captain back in the 60s, identified his skills and immediately called the National Cricket Academy.
+                        </span>   
+                    </p>                
+                </article>
+                <!-- --------------------------IPL-CAREER------------------------- -->
+                <article id="ipl-career" class="ipl-career-biography"> 
+                    <h3>Legacy and Dominance in ipl</h3>
+  
+                    <p id="ipl-career-para">
+                        Dhoni was contracted by the Chennai Super Kings (CSK) for US$1.5 million. This made him the most expensive player in the IPL for the first season auctions.
+                        <button class="close-biography-btn close-btn no-display"><span class="material-icons-sharp">close</span></button>
+                        <button class="btn btn-primary biography-detailed-btn">Read More</button>
+                        <span  id="ipl-career-details" class="no-display">
+                            MS is the only player in IPL history to get offers from all eight franchises.
+                            Under his captaincy, CSK won the 2010, 2011, 2018 and the 2021 Indian Premier League titles and the 2010 and 2014 Champions League T20 titles and ended up as a runner-up in 2008, 2012, 2013, 2015 and 2019 league seasons. <br><br>
+
+                            MS Dhoni became the first player to play 200 T20 matches for Super Kings. The former India captain is already on top of the list of most matches played in the Indian Premier League. Mahendra Singh Dhoni is also one of the only three captains to have won the Indian Premier League twice, with CSK. <br><br>
+                            In 2015, Chennai Super Kings got banned from IPL for 2 years by R.M. Lodha committee of supreme court of India. It was banned due to the illigal betting of their official Gurunath Meiyappan. He was arrested on the charges of spot-fixing According to Mahendra Singh it was darkest period of his career. He said "The biggest crime that I can commit is not a murder, it is actually match-fixing". <br><br>
+
+                            In 2016, Rising Pune Supergiant (RPS), a debuting IPL franchise team made him captain but after poor performance of the team in that season they removed Dhoni from captain's position and chose Steve Smith, then Australian national team captain, for the post. Dhoni played as wicketkeeper batsman in 2017 season for RPS. <br><br>
+
+                            In the 2018 IPL season, CSK returned to IPL, and he was again appointed to lead the franchise by the franchise. Dhoni scored 455 runs in that season and led his side to their third IPL title.
+                            As a batsman 2020 and 2021's season was bad for MS Dhoni, he scored 200 runs in 14 innings in 2020 and 116 runs in 16 innings with the poor avarage of 15.29 in 2021 IPL season.
+                            He led the franchise to 4th title in 2021 Indian Premier League season. Dhoni got retained by CSK for ₹12 Cr, before IPL 2022 player's auction. He stepped down from captaincy on 24 March 2022, handing it over to Ravindra Jadeja. 
+                        </span>
+                    </p>
+                </article>
+                <!-- --------------------------INTERNATIONAL-START------------------------- -->
+                <article id="international-start" class="international-start-biography">
+                    <h3>International Sensation</h3>
+   
+                    <p id="international-start-para" >
+                        Dhoni was selected in the ODI team for the Bangladesh tour in 2004/05. 
+                        In his debut match, Dhoni was run out for the duck. 
+                        Despite playing an average series against Bangladesh, Dhoni was picked for the ODI series against Pakistan. 
+                        <button class="close-biography-btn close-btn no-display"><span class="material-icons-sharp">close</span></button>
+                        <button class="btn btn-primary biography-detailed-btn">Read More</button>
+                        <span  id="international-start-details" class="no-display">
+                            In the second match of the series, Dhoni scored 148 runs in 123 balls and made a record for the highest score by an Indian wicket-keeper.He played in the first two matches in the Sri Lankan Bilateral ODI series that was held between October-November 2005.
+                            He was promoted to No. 3 in the third ODI held at Sawai Mansingh Stadium. Dhoni scored an unbeaten 183 off 145 balls against Sri Lanka in a winning cause. 
+                            He received the Man of the Series award.<br><br>
+
+                            In a series against Pakistan, Dhoni scored 72 runs off 46 balls in the third match, helped India to lead the series 2-1. In the final match, Dhoni scored 77 runs off 56 balls, helping India to win the series by 4-1. 
+                            On April 20, 2006, he was ranked as the number one batsman in ICC ODI Rankings sidelining Ricky Ponting. India had disappointing tournaments-- DLF Cup 2006-07, 2006 ICC Champions Trophy.<br><br>
+
+                            Dhoni was named vice-captain of the ODI team for the series against South Africa and England. 
+                            In June 2007, Dhoni received an A Grade contract from the BCCI. 
+                        </span>
+                    </p>
+                </article>
+                <!-- --------------------------CAPTAINSHIP-START------------------------- -->
+                <article id="captainship-start" class="captainship-start-biography">
+                    <h3>Rise of a Leader</h3>
+    
+                    <p id="captainship-start-para" >
+                        In September 2007, for the World Twenty20 matches, Dhoni was elected as the captain of the Indian team. 
+                        In September 2007, Dhoni shared a record with his idol Adam Gilchrist-- most dismissals in an innings in ODI.
+                        <button class="close-biography-btn close-btn no-display"><span class="material-icons-sharp">close</span></button>
+                        <button class="btn btn-primary biography-detailed-btn">Read More</button>
+                        <span  id="captainship-start-details" class="no-display">                
+                            In 2009, during the series between India and Australia, Dhoni scored 124 runs off 107 balls in the second ODI and 71 runs off 95 balls in the third ODI. On September 30, 2009, Dhoni took his first wicket in international cricket against West Indies in the Champions Trophy. In 2009, he topped the ICC ODI Batsman ranking. <br> <br>
+
+                            In 2011, Dhoni-led India to the finals with a victory over Australia in the quarter-finals and Pakistan in the finals. 
+                            Dhoni helped India win by chasing a target of 275 against Sri Lanka in the finals with Gautam Gambhir and Yuvraj Singh. Dhoni finished the match with a historical six with a score of 91*. He bagged Man of the Match for his outstanding performance in the 2011 Cricket World Cup. <br><br>
+        
+                            In 2013, India won ICC Champions Trophy and Dhoni became the first and the only captain in the history of cricket to claim all the ICC trophies. 
+                            In the same year, he became the second India batsman after Sachin Tendulkar to score 1,000 or more ODI runs against Australia. <br><br>
+        
+                            During 2013-14, India toured South Africa and New Zealand but lost both the series. 
+                            In 2014, India won the ODI series in England by 3-1 and in India by 2-1 against West Indies. 
+                            In 2014, ICC named him as the captain and wicketkeeper of the 'Team of the Tournament' for the T20 World Cup. <br><br>
+        
+                            During the 2015 Cricket World Cup, Dhoni became the first Indian captain to win all group stage matches in such a tournament. 
+                            Despite a great start in the 2015 Cricket World Cup, India lost the title to the eventual champions-- Australia. 
+                        </span>
+                    </p>
+                </article>
+                <!-- --------------------------CAPTAINSHIP-END------------------------- -->
+                <article id="captainship-end" class="captainship-end-biography">
+                    <h3>Passing the Baton
+                    </h3>
+   
+                    <p id="captainship-end-para" >
+                        In January 2017, Dhoni stepped down as the captain of the Indian team in all the limited-over formats. MS Dhoni played a key role in building the Indian Cricket Team for future generation
+                        <button class="close-biography-btn close-btn no-display"><span class="material-icons-sharp">close</span></button>
+                        <button class="btn btn-primary biography-detailed-btn">Read More</button>
+                        <span  id="captainship-start-details" class="no-display">         
+                            In the ODI home series against England, he scored well and was named as a wicketkeeper of the 'Team of the Tournament' at the 2017 Champions Trophy and ODI XI of the year by Cricbuzz. 
+                            In the same year, during the ODI against Sri Lanka, he became the first wicket-keeper to effect 100 stumpings.  <br> <br>
+                        
+                            In the 2014-15 season, Dhoni played his last test series against Australia and captained the second and third test matches. Dhoni announced his retirement from the Test format, following the third test in Melbourne. In his last test match, Dhoni effected nine dismissals and broke Kumar Sangakkara record for stumpings with 134 in all the formats. <br> <br>
+        
+                            In 2018, the ban on Chennai Super Kings was uplifted and the team returned to play the IPL. 
+                            Dhoni was again contracted by CSK and led the team to win the third IPL title. <br> <br>
+                            In 2019, he again captained for CSK and the team emerged to be one of the strongest in the season. 
+                            However, Mumbai Indians won the title. <br>    <br>     
+        
+                            In the 2019 Cricket World Cup, Dhoni was selected for the Indian team. 
+                            Dhoni played well against South Africa, Australia and West Indies but was criticised for his strike rate against Afghanistan and England.
+                            In the semi-finals against New Zealand, Dhoni scored a half-century in the second innings but was run out at a very crucial stage. With his dismissal, India's World Cup run ended.
+                        </span>
+                    </p>
+                </article>
+                <!-- --------------------------RETIREMENT------------------------- -->
+                <article id="retirement" class="retirement-biography">
+                    <h3>End Of an Era</h3>
+
+                    <p id="retirement-para">
+                        Dhoni announced his retirement from international cricket on 15 August 2020 on the day of India's 74th independence by sharing a video on Instagram.
+                        <button class="close-biography-btn close-btn no-display"><span class="material-icons-sharp">close</span></button>
+                        <button class="btn btn-primary biography-detailed-btn">Read More</button>
+                        <span  id="retirement-details" class="no-display">
+                            He did so by posting a video on Instagram that contained pictures from both the best and the worst moments of his career with the song Mai Pal do Pal ka Shayar Hoon playing in the background. 
+                            The video had been captioned as<i> "Thanks a lot for ur love and support throughout from 1929 hrs consider me as Retired". </i>Despite the fact that it had been speculated that MS Dhoni would retire shortly, the news came as a shock to everyone. <br> <br>
+                            
+                            The boy from Ranchi, who made his ODI debut in 2004, changed the face of Indian cricket with his calm demeanour, sharp understanding of the game and astute leadership qualities. <br> <br>
+                            Dhoni is one of the most well-liked and respected cricketers in the world, as well as one of the most successful captains.
+                            After winning the ICC World T20 in its inaugural edition in South Africa in 2007, he led India to victory in the ICC Cricket World Cup in 2011.
+                            Dhoni made history by being the first and only captain to win all three ICC Trophies when India won the ICC Champions Trophy in England in 2013. <br> <br>
+                            While his exploits in the limited-overs formats are well-known, it was also under his supervision that India rose to the top of the Test rankings in 2009, where they remained for over 600 days.
+                            He has guided India to 21 Test victories at home, the most of any Indian captain. <br> <br>
+                            Leaving behind a rich legacy that will be difficult to replicate, Dhoni holds the record for most international matches as captain (332). Unarguably the quickest man behind the wicket, Dhoni has 195 international stumpings, the most by any wicket-keeper.
+                        </span>
+                    </p>
+                </article>
+                <!-- --------------------------TERRITORIAL-ARMY------------------------- -->
+                <article id="territorial-army" class="territorial-army-biography"> 
+                    <h3>Patriot On Duty</h3>
+  
+                    <p id="territorial-army-para">
+                        Dhoni holds a honorary rank of Lieutenant Colonel in the Parachute Regiment of the Indian Territorial Army (106 Para TA battalion). 
+                        <button class="close-biography-btn close-btn no-display close-btn"><span class="material-icons-sharp">close</span></button>
+                        <button class="btn btn-primary biography-detailed-btn ">Read More</button>
+                        <span  id="territorial-army-details" class="no-display">
+                            The honorary rank was presented to him by the Indian Army in 2011 for his service to the nation as a cricketer. <br><br>
+                            After completing five parachute training jumps from Indian Army aircraft in the Agra training camp, 
+                            he became a qualified paratrooper in 2015. 
+                            In August 2019 he completed a two-week stint with the Territorial Army in Jammu and Kashmir.
+                        </span>
+                    </p>
+                </article>
+            </div>
+        </section>
+        <!-- ======================BIOGRAPHY-ENDS======================= -->
+        <!-- ======================HONOURS-STARTS======================== -->
+        <section class="honours container section" id="honours">
+            <div class="wrapper">
+                <h1 class="section-heading honours-heading1">Honours</h1>
+                <h1 class="honours-heading2">Hall Of Fame</h1>
+                <!-- TABS -->
+                <div class="honours-tablist">
+                    <button id="national-honour-btn" >National Honours</button>
+                    <button id="all-honour-btn" class="clicked-btn">All</button>
+                    <button id="sporting-honour-btn">Sporting Honours</button>
+                </div>
+                <div class="honours-wrapper">
+                    <!-- NATIONAL-HONOURS -->
+                    <div class="national-honours" id="national-honours">
+                        <ul class="national-honours-ul honours-ul">
+                            <li>2018: Padma Bhushan, India's third-highest civilian award</li>
+                            <li>2009: Padma Shri, India's fourth-highest civilian award</li>
+                            <li>2007–08: Rajiv Gandhi Khel Ratna, India's highest honor given for achievement in sports</li>
+                        </ul>                    
+                    </div>
+                    <!-- SPORTING-HONOURS -->
+                    <div class="sporting-honours" id="sporting-honours">                
+                    <ul class="sporting-honours-ul honours-ul">
+                        <li>ICC ODI Player of the Year: 2008, 2009</li>
+                        <li>ICC World ODI XI: 2006, 2008, 2009, 2010, 2011, 2012, 2013, 2014 [captain in 2009, 2011–2014]</li>
+                        <li>ICC World Test XI: 2009, 2010, 2013</li>
+                        <li>Castrol Indian Cricketer of the Year: 2011</li>
+                        <li>ICC Men's ODI team of the decade: 2011 - 2020 [captain and wicketkeeper]</li>
+                        <li>ICC Men's T20I team of the decade: 2011 -2020 [captain and wicketkeeper]</li>
+                        <li>ICC Spirit of the cricket award of the decade: 2011 - 2020</li>
+                    </ul>           
+                </div>
+            </div>
+        </section>
+        <!-- ======================HONOURS-ENDS======================== -->
+        <!-- =====================RECORDS-START===================== -->
+        <section class="records section" id="records">
+            <div class="container records-container-1">
+                <h1 class="section-heading">Records</h1>
+                <p>
+                    MS Dhoni had broken numerous records and brought the most glory to his team and country. He is one of the most well-known people in the planet. He has established a positive image in the eyes of his opponents by achieving several accomplishments in practically every field. 
+                </p>
+                <div class="records-cards">
+                    <!-- CARD-1 -->
+                    <article id="t20i-records" class="records-card">
+                        <span class="records-icon "><img src="assets/images/international-logo.png" alt="image"></span>
+                        <h3>T20I</h3>
+                    </article>
+                    <!-- CARD-2 -->
+                    <article id="odi-records" class="records-card">
+                        <span class="records-icon"><img src="assets/images/international-logo.png" alt="image"></span>
+                        <h3>ODI</h3>
+                    </article>
+                    <!-- CARD-3 -->
+                    <article id="test-records" class="records-card">
+                        <span class="records-icon "><img src="assets/images/international-logo.png" alt="image"></span>
+                        <h3>TEST</h3>
+                    </article>
+                    <!-- CARD-3 -->
+                    <article id="ipl-records" class="records-card">
+                        <span class="records-icon "><img src="assets/images/csk-logo.png" alt="image"></span>
+                        <h3>IPL</h3>
+                    </article>                
+                </div>
+            </div>
+            <div class="contaier records-container-2">
+                <!-- T20I-RECORDS -->
+                <div id="t20i-records-display" class=" no-display">
+                    <button class="close-btn close-record-btn "><span class="material-icons-sharp">close</span></button>
+                    <h1>T20I Records</h1>
+                    <ul class="records-ul">
+                        <li  class="records-li">Most wins in T20Is as captain (41).</li>
+                        <li  class="records-li">Most matches as captain in T20Is (72).</li>
+                        <li  class="records-li">Most matches in T20I history as both captain and wicket-keeper (72).</li>
+                        <li  class="records-li">Most consecutive T20I innings without a duck (84).</li>
+                        <li  class="records-li">Dhoni holds the record for playing the most T20I innings (76) and scored the most runs(1,153) before scoring a fifty.</li>
+                        <li  class="records-li"> Most dismissals as wicket-keeper in T20Is (87).</li>
+                        <li  class="records-li">Most stumpings as wicket-keeper in T20Is (33).</li>
+                        <li  class="records-li">Most stumpings as wicket-keeper in T20Is (33).</li>
+                        <li  class="records-li">Most stumpings as wicket-keeper in T20Is (33).</li>
+                        <li  class="records-li">Most catches as wicketkeeper in a T20I innings (5).</li>
+                    </ul> 
+                </div> 
+                <!-- ODI-RECORDS -->
+                <div id="odi-records-display" class="no-display">
+                    <button class="close-btn close-record-btn"><span class="material-icons-sharp">close</span></button>
+                    <h1>ODI Records</h1>
+                    <ul class="records-ul" >
+                        <li  class="records-li">Dhoni is third captain (and the first non-Australian) overall to win 100 games.</li>
+                        <li  class="records-li">Fourth Indian to reach 10,000 ODI runs after Sachin Tendulkar, Sourav Ganguly & Rahul Dravid and also the second wicket-keeper to reach the milestone.</li>
+                        <li  class="records-li">First player to pass 10,000 runs in ODI cricket with having a career average of over 50.</li>
+                        <li  class="records-li">Dhoni has the fifth highest batting average (51.09), among cricketers with more than 5,000 runs and the second highest batting average among players with an aggregate of over 10,000 runs.</li>
+                        <li  class="records-li">Most career runs in ODI history when batting at number 6 position (4031)</li>
+                        <li  class="records-li">Only player to score more than one hundred in ODI cricket when batting at number 7 position or lower (Dhoni has 2 centuries at number 7).</li>
+                        <li  class="records-li">Most not outs (82) in ODIs.</li>
+                        <li  class="records-li">First Indian and fifth overall to hit 200 sixes in ODIs.</li>
+                        <li  class="records-li">Dhoni's 183* against Sri Lanka in 2005 is the highest score by a wicket-keeper.</li>
+                        <li  class="records-li">Dhoni's 113 against Pakistan in Chennai in 2012 is the highest by a captain batting at number 7.</li>
+                        <li  class="records-li">Dhoni and Bhuvneshwar Kumar were involved in a partnership of 100 not out against Sri Lanka, which is India's highest eighth wicket partnership in ODIs.</li>
+                        <li  class="records-li">Most unbeaten innings and highest average (among batsmen with more that 20 such innings) in successful ODI run-chases.</li>
+                        <li  class="records-li">Holds the record for playing the most matches in ODI history as captain who has also served as a wicket-keeper(200)</li>
+                        <li  class="records-li">Dhoni holds the records of the most dismissals in an innings (6) and career (432) by an Indian wicket-keeper.</li>
+                        <li  class="records-li">Dhoni has the most stumpings (120) by any wicket-keeper in an ODI career and is so far the only keeper to pass 100 stumpings</li>
+                        <li  class="records-li">First Indian wicket-keeper to take 300 ODI catches and fourth wicket-keeper in the world to achieve the feat.</li>
+                    </ul>
+                </div>
+
+                <!-- TEST-RECORDS -->
+                <div id="test-records-display" class=" no-display">
+                    <button class="close-btn close-record-btn"><span class="material-icons-sharp">close</span></button>
+                    <h1>Test Records</h1>
+                    <ul class="records-ul">
+                        <li  class="records-li">Under Dhoni's captaincy, India topped the Test cricket rankings for the first time, in 2009.</li>
+                        <li  class="records-li">Dhoni has the most overseas Test defeats by an Indian captain, with 15.</li>
+                        <li  class="records-li">Dhoni is the first Indian wicket-keeper to complete 4,000 Test runs.</li>
+                        <li  class="records-li">Dhoni's 224 against Australia in Chennai is the third highest score by an Indian captain. En route to 224, Dhoni registered the highest Test score by an Indian wicket-keeper when he was on 193, beating Budhi Kunderan's 192. It was also the highest score by a wicket-keeper–captain beating Englishman Alec Stewart's 164.</li>
+                        <li  class="records-li">Dhoni's maiden century against Pakistan in Faisalabad (148) is the fastest century scored by an Indian wicket-keeper, and fourth overall.</li>
+                        <li  class="records-li">After hitting a six in the third Test against England in Southampton, Dhoni completed 50 sixes as a captain, an Indian record.</li>
+                        <li  class="records-li">Dhoni, with 294 dismissals in his career, ranks first in the all-time dismissals list by Indian wicket-keepers.</li>
+                        <li  class="records-li">Dhoni shares the record for most dismissals in an innings (6, with Syed Kirmani) and in a match (9) by an Indian wicket-keeper.</li>
+                    </ul> 
+                </div>
+                <!-- IPL-RECORDS -->
+                <div id="ipl-records-display" class="no-display">
+                    <button class="close-btn close-record-btn"><span class="material-icons-sharp">close</span></button>
+                    <h1>IPL Records</h1>
+                    <ul class="records-ul">
+                        <li  class="records-li">MS Dhoni has played in 204 IPL matches which is the most matches by a player.</li>
+                        <li  class="records-li">MS Dhoni has scored 832 runs vs RCB which is the most by a player vs RCB is IPL.</li>
+                        <li  class="records-li">MS Dhoni has smashed 209 sixes in IPL so far, most by an IND batsman and 3rd overall in IPL.</li>
+                        <li  class="records-li">MS Dhoni is the only skipper to have 100 wins to his name in IPL.</li>
+                        <li  class="records-li">MS Dhoni has got most sixes in death overs (17-20) in IPL – 141.</li>
+                        <li  class="records-li">MS Dhoni led CSK for 85 consecutive matches from 6 April 2013 to 14 April 2019 which is 2nd most consecutive matches by a captain for a team in T20s.</li>
+                        <li  class="records-li">Dhoni is the only Indian player to score a half-century in his 40's as well.</li>
+                        <li  class="records-li">MS Dhoni is the only wicket keeper to complete 150 wicketkeeping dismissals in IPL.</li>
+                    </ul> 
+                </div>
+                
+                
+                
+                
+                
+                
+            </div>
+        </section>
+        <!-- =====================RECORDS-ENDS===================== -->
+        <!-- ====================GALLERY-STARTS===================== -->
+        <section class="container gallery section" id="gallery">
+            <div class="wrapper">
+                <h1 class="section-heading">GALLERY</h1>
+                <!-- GALLERY-IMAGES -->
+                <div id="image-gallery" class="image-gallery">               
+                    <figure>
+                        <img  src="assets/images/gallery/msd-gallery-img1.jpg" alt="MS Dhoni Image" class="gallery-img" id="image-gallery-1">
+                    </figure>
+                </div>
+                <!-- GALLERY-BUTTON -->
+                <div >
+                    <button id="gallery-btn" class="btn btn-primary" data-visible="false">Show More</button>
+                </div>
+                <!-- GALLERY-FULL-SCREEN-VIEW -->
+                <div id="full-screen-gallery" class="no-display">
+                    <button class="close-gallery-btn close-btn"><span class="material-icons-sharp">close</span></button>
+                    <button class="previous-gallery-btn backward-btn"><span class="material-icons-sharp">arrow_back_ios</span></button>
+                    <button class="next-gallery-btn forward-btn"><span class="material-icons-sharp">arrow_forward_ios</span></button>
+                    <div id="full-screen-image-container">
+                        <figure>
+                            <img  src="assets/images/gallery/msd-gallery-img1.jpg" alt="MS Dhoni Image" class="gallery-img" id="image-gallery-1">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <!-- ======================GALLERY-ENDS======================= -->
+    
+    <!-- =====================FOOTER-START===================== -->
+    <footer class="footer section">
+        <div class="container footer-container">
+            <!-- FOOTER-1 -->
+            <div class="footer-2">
+                <h4>Links</h4>
+                <ul class="permalinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#statistics">Statistics</a></li>
+                    <li><a href="#biography">Biography</a></li>
+                    <li><a href="#records">Records</a></li>
+                    <li><a href="#honours">Honours</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+            <!-- FOOTER-2 -->
+            <div class="footer-1">
+                <h4>WEBSITE</h4>
+                <p>
+                    This website is designed and developed by Kritagya Singh Chouhan.
+                    Lets build fascinating, responsive, fast and secure websites. 
+                </p>
+                <button class="btn footer-btn"> <a href="https://mail.google.com/mail/u/4/#inbox?compose=CllgCKCBkBPSXqHJRMkDRpGcJZpkrwvSFVFGdQvdBRJvJltDdfXQpBVvCqDjzZGgdNqXqxQVBcg" target="_blank">Lets Connect</a></button>
+            </div>
+            <!-- FOOTER-3 -->
+            <div class="footer-3">
+                <h4>Social Handles</h4>
+                <ul class="footer-socials">
+                    <li>  <a href="https://www.instagram.com/kritagya_chouhan" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li>  <a href="https://twitter.com/kritagyachouhan" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li>  <a href="https://www.linkedin.com/in/kritagya-singh-chouhan-b90666202/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li>  <a href="https://github.com/kritagya20" target="_blank"><i class="fab fa-github"></i></a> </li>
+                </ul>
+            </div>
+            <!-- FOOTER-4 -->
+            <div class="footer-4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+91 7987322906</p>
+                    <p>kritagya2022@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <small class="general">
+            <p>Developed and Designed by <mark> <b>Kritagya Singh Chouhan</b></mark></p>
+        </small>
+        
+    </footer>
+    <!-- =====================FOOTER-ENDS===================== -->
+</main>
+</body>
+</html>
